@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090c12">
+  <meta name="description" content="Небольшой атлас далёкой-далёкой галактики. Исследуйте миры Star Wars.">
+  <title>Galaxy Atlas — далёкая-далёкая галактика</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a class="brand" href="/" aria-label="Galaxy Atlas — главная"><span class="brand-icon" aria-hidden="true">✳</span> GALAXY<span>ATLAS</span></a>
+    <nav aria-label="Главная навигация"><a href="#worlds">Атлас миров <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ПОЛЕВОЙ АТЛАС / STAR WARS</p>
+        <h1 id="hero-title">Галактика<br>ближе, чем<br><em>кажется.</em></h1>
+        <p class="intro">От песков Татуина до ледников Хота.<br>У каждого мира есть история. Найдите свою.</p>
+        <a class="cta" href="#worlds">Исследовать миры <span aria-hidden="true">↓</span></a>
+        <div class="hero-meta"><span>07 <small>МИРОВ В АТЛАСЕ</small></span><span>∞ <small>ПУТЕЙ ВПЕРЕДИ</small></span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Татуин с двумя солнцами в звёздном пространстве">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="sun sun-one"></div><div class="sun sun-two"></div>
+        <div class="hero-planet"></div>
+        <div class="coordinate">ВНЕШНЕЕ КОЛЬЦО <span>23 : 07 : 42</span></div>
+        <div class="planet-label"><span>01 / TATOOINE</span><strong>Татуин</strong><small>Там, где всё началось.</small></div>
+      </div>
+    </section>
+    <div class="signal"><div class="wrap"><span>ДАЛЕКО ОТ ПРИВЫЧНОГО</span><span aria-hidden="true">✦</span><span>БЛИЖЕ К НЕИЗВЕДАННОМУ</span><span aria-hidden="true">✦</span><span>ДА ПРЕБУДЕТ С ВАМИ СИЛА</span></div></div>
+    <section id="worlds" class="worlds wrap" aria-labelledby="worlds-title">
+      <div class="section-heading"><div><p class="eyebrow">ВЫБЕРИТЕ КООРДИНАТЫ</p><h2 id="worlds-title">Миры галактики<span>.</span></h2></div><p>Маленький атлас.<br>Большая вселенная.</p></div>
+      <form id="filters" class="toolbar" role="search">
+        <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" name="q" placeholder="Название или ландшафт" aria-label="Поиск миров" maxlength="100"></label>
+        <div class="region-control"><label for="region">Регион</label><select id="region" name="region"><option value="">Вся галактика</option value="outer">Внешнее кольцо</option><option value="core">Ядро</option><option value="unknown">Неизведанные регионы</option></select></div>
+      </form>
+      <p id="status" class="status" role="status" aria-live="polite">Загружаем координаты…</p>
+      <button id="retry" class="retry" hidden type="button">Повторить загрузку</button>
+      <div id="planet-grid" class="planet-grid" aria-label="Каталог миров" aria-busy="true"></div>
+    </section>
+    <section class="quote wrap"><span aria-hidden="true">✳</span><blockquote>«Да пребудет с тобой Сила.»</blockquote><p>И пусть любопытство ведёт дальше.</p><a href="#hero-title">Вернуться к звёздам ↑</a></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="/">GALAXY<span>ATLAS</span></a><p>Учебный фан-проект · Не связан с Lucasfilm</p><span>СОЗДАНО ИЗ ЛЮБОПЫТСТВА ↗</span></footer>
+</body>
+</html>

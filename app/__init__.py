@@ -1,0 +1,1 @@
+"""Galaxy Atlas training application."""
